@@ -59,24 +59,24 @@ const ChartDashboard = () => {
   };
 
   return (
-    <div className="charts">
+  <div className="charts">
 
-      <div className="chart-box">
-        <h3>Sales Trend</h3>
-        <Line data={lineData} />
-      </div>
-
-      <div className="chart-box">
-        <h3>Revenue</h3>
-        <Bar data={barData} />
-      </div>
-
-      <div className="chart-box">
-        <h3>User Devices</h3>
-        <Pie data={pieData} />
-      </div>
-
+    <div className="chart-box">
+      <h3>Sales Trend</h3>
+      <Line data={lineData} options={{ responsive:true, maintainAspectRatio:false }} />
     </div>
+
+    <div className="chart-box">
+      <h3>Revenue</h3>
+      <Bar data={barData} options={{ responsive:true, maintainAspectRatio:false }} />
+    </div>
+
+    <div className="chart-box">
+      <h3>User Devices</h3>
+      <Pie data={pieData} options={{ responsive:true, maintainAspectRatio:false }} />
+    </div>
+
+  </div>
   );
 };
 

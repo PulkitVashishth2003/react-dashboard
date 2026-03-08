@@ -32,4 +32,11 @@ body{
   background:white;
   padding:20px;
   border-radius:10px;
+  transition: transform 0.3s ease;
+  height:300px;
+}
+
+.chart-box:hover{
+  transform: scale(1.08);
+  z-index:10;
 }
